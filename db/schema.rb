@@ -10,6 +10,30 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20170104172113) do
+
+  create_table "questionnaires", force: :cascade do |t|
+    t.string   "name"
+    t.string   "email"
+    t.string   "project_repo"
+    t.string   "project_url"
+    t.integer  "oop"
+    t.integer  "modular"
+    t.integer  "fullstack"
+    t.integer  "testing"
+    t.integer  "database"
+    t.integer  "debugging"
+    t.integer  "problem"
+    t.integer  "javascript"
+    t.integer  "html"
+    t.integer  "css"
+    t.integer  "team"
+    t.integer  "motivation"
+    t.integer  "communication"
+    t.integer  "energy"
+    t.integer  "aptitude"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+  end
 
 end
