@@ -1,0 +1,75 @@
+<%= form_for(questionnaire) do |f| %>
+  <% if questionnaire.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(questionnaire.errors.count, "error") %> prohibited this questionnaire from being saved:</h2>
+
+      <ul>
+      <% questionnaire.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.text_field :name, placeholder: 'FULl NAME' %>
+  </div>
+  <div class="field">
+    <%= f.text_field :email, placeholder: 'EMAIL' %>
+  </div>
+  <div class="field">
+    <%= f.text_field :project_repo, placeholder: 'PROJECT REPO' %>
+  </div>
+  <div class="field">
+    <%= f.text_field :project_url, placeholder: 'PROJECT URL' %>
+  </div>
+  <div class="field">
+    <%= f.number_field :oop, placeholder: 'USING BEST PRACTICES FOR OOP' %>
+  </div>
+  <div class="field">
+    <%= f.number_field :modular, placeholder: 'MODULAR DEVELOPMENT' %>
+  </div>
+  <div class="field">
+    <%= f.number_field :fullstack, placeholder: 'FULL-STACK WORKFLOW UNDERSTANDING' %>
+  </div>
+  <div class="field">
+    <%= f.number_field :testing, placeholder: 'TESTING' %>
+  </div>
+  <div class="field">
+    <%= f.number_field :database, placeholder: 'DATABASE KNOWLEDGE' %>
+  </div>
+  <div class="field">
+    <%= f.number_field :debugging, placeholder: 'DEBUGGING' %>
+  </div>
+  <div class="field">
+    <%= f.number_field :problem, placeholder: 'PROBLEM SOLVING SKILLS' %>
+  </div>
+  <div class="field">
+    <%= f.number_field :javascript, placeholder: 'JAVASCRIPT' %>
+  </div>
+  <div class="field">
+    <%= f.number_field :html, placeholder: 'HTML' %>
+  </div>
+  <div class="field">
+    <%= f.number_field :css, placeholder: 'CSS' %>
+  </div>
+  <div class="field">
+    <%= f.number_field :team, placeholder: 'WORKING ON A TEAM' %>
+  </div>
+  <div class="field">
+    <%= f.number_field :motivation, placeholder: 'SELF MOTIVATION' %>
+  </div>
+  <div class="field">
+    <%= f.number_field :communication, placeholder: 'COMMUNICATION SKILLS' %>
+  </div>
+  <div class="field">
+    <%= f.number_field :energy, placeholder: 'YOUR OWN ENERGY LEVEL' %>
+  </div>
+  <div class="field">
+    <%= f.number_field :aptitude, placeholder: 'INTELLIGENCE / APTITUDE' %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
