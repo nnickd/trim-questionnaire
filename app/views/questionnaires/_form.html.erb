@@ -13,7 +13,6 @@
         </ul>
     </div>
     <% end %>
-
     <div class="field">
         <%= f.text_field :name, placeholder: 'FULL NAME' %>
     </div>
@@ -28,63 +27,63 @@
     </div>
     <div class="field">
         <%= f.label "USING BEST PRACTICES FOR OOP:" %>
-        <%= f.number_field :oop %>
+        <%= f.number_field :oop, min: 0, max: 50, value: 0 %>
     </div>
     <div class="field">
         <%= f.label "MODULAR DEVELOPMENT:" %>
-        <%= f.number_field :modular %>
+        <%= f.number_field :modular, min: 0, max: 50, value: 0 %>
     </div>
     <div class="field">
         <%= f.label "FULL-STACK WORKFLOW UNDERSTANDING:" %>
-        <%= f.number_field :fullstack %>
+        <%= f.number_field :fullstack, min: 0, max: 50, value: 0 %>
     </div>
     <div class="field">
         <%= f.label "TESTING:" %>
-        <%= f.number_field :testing %>
+        <%= f.number_field :testing, min: 0, max: 50, value: 0 %>
     </div>
     <div class="field">
         <%= f.label "DATABASE KNOWLEDGE:" %>
-        <%= f.number_field :database %>
+        <%= f.number_field :database, min: 0, max: 50, value: 0 %>
     </div>
     <div class="field">
         <%= f.label "DEBUGGING:" %>
-        <%= f.number_field :debugging %>
+        <%= f.number_field :debugging, min: 0, max: 50, value: 0 %>
     </div>
     <div class="field">
         <%= f.label "PROBLEM SOLVING SKILLS:" %>
-        <%= f.number_field :problem %>
+        <%= f.number_field :problem, min: 0, max: 50, value: 0 %>
     </div>
     <div class="field">
         <%= f.label "JAVASCRIPT:" %>
-        <%= f.number_field :javascript %>
+        <%= f.number_field :javascript, min: 0, max: 50, value: 0 %>
     </div>
     <div class="field">
         <%= f.label "HTML:" %>
-        <%= f.number_field :html %>
+        <%= f.number_field :html, min: 0, max: 50, value: 0 %>
     </div>
     <div class="field">
         <%= f.label "CSS:" %>
-        <%= f.number_field :css %>
+        <%= f.number_field :css, min: 0, max: 50, value: 0 %>
     </div>
     <div class="field">
         <%= f.label "WORKING ON A TEAM:" %>
-        <%= f.number_field :team %>
+        <%= f.number_field :team, min: 0, max: 50, value: 0 %>
     </div>
     <div class="field">
         <%= f.label "SELF MOTIVATION:" %>
-        <%= f.number_field :motivation %>
+        <%= f.number_field :motivation, min: 0, max: 50, value: 0 %>
     </div>
     <div class="field">
         <%= f.label "COMMUNICATION SKILLS:" %>
-        <%= f.number_field :communication %>
+        <%= f.number_field :communication, min: 0, max: 50, value: 0 %>
     </div>
     <div class="field">
         <%= f.label "YOUR OWN ENERGY LEVEL:" %>
-        <%= f.number_field :energy %>
+        <%= f.number_field :energy, min: 0, max: 50, value: 0 %>
     </div>
     <div class="field">
         <%= f.label "INTELLIGENCE / APTITUDE:" %>
-        <%= f.number_field :aptitude %>
+        <%= f.number_field :aptitude, min: 0, max: 50, value: 0 %>
     </div>
 
     <div class="actions">

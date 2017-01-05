@@ -1,0 +1,27 @@
+$(document).on('turbolinks:load', function() {
+
+  $('input[type=number]').change(function() {
+    console.log(currentTotal());
+    console.log(currentMax());
+    if (currentMax() < 0) {
+      this.value = Number(this.value) + currentMax();
+    }
+
+  });
+
+  var totalPoints = 50;
+
+  var currentTotal = function() {
+    var total = 0;
+    $('input[type=number]').each(function() {
+      total += Number(this.value);
+    });
+    return total;
+  };
+
+  var currentMax = function() {
+    return totalPoints - currentTotal();
+  };
+
+
+});
