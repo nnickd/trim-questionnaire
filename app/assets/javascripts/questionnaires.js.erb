@@ -1,12 +1,12 @@
 $(document).on('turbolinks:load', function() {
 
   $('input[type=number]').change(function() {
-    console.log(currentTotal());
-    console.log(currentMax());
     if (currentMax() < 0) {
       this.value = Number(this.value) + currentMax();
     }
-
+    if (this.value === '') {
+      this.value = 0;
+    }
   });
 
   var totalPoints = 50;
