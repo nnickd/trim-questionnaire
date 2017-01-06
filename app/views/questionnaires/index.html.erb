@@ -1,0 +1,20 @@
+<%= link_to 'new', root_path %>
+
+<div class="card list">
+    <table cellpadding="10" cellspacing="5">
+        <tr class="table-head">
+            <td>NAME</td>
+            <td>EMAIL</td>
+            <td>PROJECT REPO</td>
+            <td>PROJECT URL</td>
+        </tr>
+        <% @questionnaires.each do |questionnaire| %>
+        <tr>
+            <td><%= link_to questionnaire.name, questionnaire %></td>
+            <td><%= questionnaire.email %></td>
+            <td><%= questionnaire.project_repo %></td>
+            <td><%= questionnaire.project_url %></td>
+        </tr>
+        <% end %>
+    </table>
+</div>

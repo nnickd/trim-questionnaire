@@ -29,13 +29,22 @@ body {
 }
 
 .left {
-    width: 700px;
+    width: auto;
     height: 300px;
     margin-right: 10px;
 }
 
 .right {
   margin-left: 10px;
+}
+
+.list {
+  width: auto;
+}
+
+.table-head {
+  color: #114B5F;
+  background-color: #E4FDE1;
 }
 
 table {
