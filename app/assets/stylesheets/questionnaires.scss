@@ -17,6 +17,18 @@ body {
     background-color: #114B5F;
 }
 
+a {
+    color: #F45B69;
+    text-decoration: none;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+}
+
 .card {
     display: flex;
     flex-direction: column;
@@ -30,31 +42,26 @@ body {
 
 .left {
     width: auto;
-    height: 300px;
+    height: 250px;
     margin-right: 10px;
 }
 
 .right {
-  margin-left: 10px;
+    margin-left: 10px;
+}
+
+.content {
+    display: flex;
 }
 
 .list {
-  width: auto;
-}
-
-.table-head {
-  color: #114B5F;
-  background-color: #E4FDE1;
-}
-
-table {
-  margin: auto;
+    width: auto;
 }
 
 .val {
-  color: #114B5F;
-  background-color: #E4FDE1;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    color: #114B5F;
+    background-color: #E4FDE1;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .field {
@@ -70,6 +77,10 @@ table {
     display: flex;
     margin-top: 30px;
     margin-bottom: 10px;
+}
+
+table {
+  margin: auto;
 }
 
 label {

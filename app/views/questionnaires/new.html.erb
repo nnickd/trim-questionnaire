@@ -1,3 +1,8 @@
-<%= link_to 'index', questionnaires_path %>
-
-<%= render 'form', questionnaire: @questionnaire %>
+<div class="box">
+  <div class="links">
+    <%= link_to 'INDEX', questionnaires_path %>
+  </div>
+  <div class="content">
+    <%= render 'form', questionnaire: @questionnaire %>
+  </div>
+</div>
