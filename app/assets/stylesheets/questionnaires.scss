@@ -70,10 +70,20 @@ a {
 
 .points {
   position: fixed;
+  color: #F45B69;
+}
+
+.pl {
   top: 30%;
   left: 0%;
   font-size: 20vw;
-  color: #E4FDE1;
+}
+
+.pr {
+  letter-spacing: normal;
+  top: 40%;
+  right: 0%;
+  font-size: 6vw;
 }
 
 .field {

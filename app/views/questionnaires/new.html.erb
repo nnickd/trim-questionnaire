@@ -3,9 +3,12 @@
         <%= link_to 'INDEX', questionnaires_path %>
     </div>
     <div class="flex-row">
-        <div class="points flex-col">
+        <div class="points pl flex-col">
             50
         </div>
         <%= render 'form', questionnaire: @questionnaire %>
+        <div class="points pr flex-col">
+            POINTS <br> LEFT
+        </div>
     </div>
 </div>
